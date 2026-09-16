@@ -67,7 +67,7 @@ a{color:var(--blue)}
   font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
   color:var(--amber);
 }
-.uct-logo{display:block;height:40px;width:auto;margin-bottom:18px}
+.uct-logo{display:block;height:250px;width:auto;margin-bottom:18px}
 .uct-crest{height:60px;width:60px;float:right;margin-left:16px}
 @media(max-width:520px){.uct-logo{height:34px}.uct-crest{height:48px;width:48px}}
 h1{
@@ -140,7 +140,14 @@ h2{
   font-family:'Newsreader',serif;font-weight:600;font-size:clamp(23px,4.5vw,29px);
   line-height:1.15;color:var(--blue);letter-spacing:-.01em;
 }
-.intro{color:var(--slate);margin-top:10px;max-width:640px}
+.intro{color:var(--slate);margin-top:10px;max-width:800px}
+.intro p {
+  margin-bottom: 5px;
+}
+.intro ol {
+  margin-top: 0;
+  padding-left: 20px;
+}
 h3{
   font-family:'Newsreader',serif;font-weight:600;font-size:19px;
   color:var(--ink);margin-bottom:6px;
@@ -193,6 +200,7 @@ h3{
 .panel h3{font-size:18px}
 .panel p{color:var(--slate);font-size:14px;margin-top:4px}
 .panel ul{margin:10px 0 0 18px;color:var(--ink);font-size:14px}
+.panel ol{margin:10px 0 0 18px;color:var(--ink);font-size:14px}
 .panel li{margin-bottom:6px}
 .panel a{color:var(--blue)}
 
@@ -227,7 +235,7 @@ details .inner p{margin-top:8px}
 details .inner ul,details .inner ol{margin:8px 0 0 18px}
 details .inner li{margin-bottom:6px}
 details .inner a{color:var(--blue)}
-.kv{display:grid;grid-template-columns:150px 1fr;gap:6px 14px;margin-top:10px;font-size:14px}
+.kv{display:grid;grid-template-columns:125px 1fr;gap:6px 14px;margin-top:10px;font-size:14px}
 .kv dt{color:var(--slate);font-weight:600}
 @media(max-width:520px){.kv{grid-template-columns:1fr}.kv dt{margin-top:6px}}
 
@@ -245,6 +253,13 @@ details .inner a{color:var(--blue)}
 }
 .note.blue{background:var(--blue-soft);border-color:var(--blue-line);color:var(--blue-deep)}
 .note.amber{background:var(--amber-soft);border-color:var(--amber-line);color:var(--amber)}
+
+.table-wrap{overflow-x:auto;margin-top:10px;border:1px solid var(--line);border-radius:10px}
+table.matrix{width:100%;border-collapse:collapse;font-size:13.5px;min-width:480px}
+table.matrix th,table.matrix td{text-align:left;padding:9px 14px;border-bottom:1px solid var(--line)}
+table.matrix th{background:var(--blue-soft);color:var(--blue-deep);font-weight:700;font-size:12px;letter-spacing:.03em;text-transform:uppercase}
+table.matrix tbody tr:last-child td{border-bottom:none}
+table.matrix tbody tr:nth-child(even){background:rgba(228,238,246,.35)}
 
 footer{
   margin-top:48px;border-top:1px solid var(--line);
